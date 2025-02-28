@@ -1,5 +1,5 @@
 <template>
-    <div class="masterminds-division-item" :class="isHover ? 'expanded' : isOtherHover ? 'contracted' : ''">
+    <div class="masterminds-division-item" :class="[divisionClass, isHover ? 'expanded' : isOtherHover ? 'contracted' : '']">
         <div class="base-mountain-zero">
             <img src="../../assets/images/png/base-mountain-zero.png" class="division-item" alt="Division Item Two">
         </div>
@@ -46,13 +46,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, computed } from 'vue';
+import { defineComponent } from 'vue';
 
 export default defineComponent({
     name: 'DivisionItem',
 
     props: {
-        itemWidth: Number,
+        indexNumber: Number,
+        divisionClass: String,
+        divisionClassExpanded: String,
         isHover: Boolean,
         isOtherHover: Boolean,
         imgSrc: {

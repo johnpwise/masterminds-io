@@ -177,63 +177,112 @@
         }
     }
 
-    &.contracted {
-        width: 540px;
-
-        .base-mountain-zero {
-            img {
-                transform: translateX(-1.5rem) translateY(120px);
-                opacity: 0.25;
+    &.data {
+        &.contracted {
+            width: 540px;
+    
+            .base-mountain-zero {
+                img {
+                    transform: translateX() translateY(60px);
+                    opacity: 0.25;
+                }
             }
-        }
-
-        // .base-mountain-one {
-        //     img {
-        //         transform: translateY(180px);
-        //         opacity: 0.25;
-        //     }
-        // }
-
-        // .trees-one {
-        //     img {
-        //         transform: translateX(0.5rem) translateY(6.5rem);
-        //     }
-        // }
-
-        .foreground {
-            img {
-                transform: scaleX(1.15) scaleY(1) translateX(-25.5rem) translateY(0.4rem);
-                transition: transform $mm-timing-medium ease-in-out;
+    
+            .foreground {
+                img {
+                    transform: scaleX(1.15) scaleY(1) translateX(-25.5rem) translateY(3.2rem);
+                    transition: transform $mm-timing-medium ease-in-out;
+                }
             }
-        }
-
-        // .rock-one {
-        //     img {
-        //         opacity: 0;
-        //     }
-        // }
-
-        // .explorer {
-        //     img {
-        //         opacity: 0;
-        //     }
-        // }
-
-        .masterminds-division-item-content {
-            .masterminds-division-item-blurb {
-                opacity: 0;
-                visibility: hidden;
-                transform: translateY(20px);
+    
+            .masterminds-division-item-content {
+                .masterminds-division-item-blurb {
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(20px);
+                }
+    
+                img.mm-brain {
+                    transform: translateY(0);
+                }
+    
+                .mm-button {
+                    transform: translateY(0);
+                    opacity: 0;
+                }
             }
-
-            img.mm-brain {
-                transform: translateY(0);
-            }
-
-            .mm-button {
-                transform: translateY(0);
-                opacity: 0;
-            }
-        }
+        }    
     }
+
+    &.analytics {
+        &.contracted {
+            width: 540px;
+    
+            .base-mountain-zero {
+                img {
+                    transform: translateX(-1.5rem) translateY(120px);
+                    opacity: 0.25;
+                }
+            }
+    
+            .foreground {
+                img {
+                    transform: scaleX(1.15) scaleY(1) translateX(-25.5rem) translateY(3.2rem);
+                    transition: transform $mm-timing-medium ease-in-out;
+                }
+            }
+    
+            .masterminds-division-item-content {
+                .masterminds-division-item-blurb {
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(20px);
+                }
+    
+                img.mm-brain {
+                    transform: translateY(0);
+                }
+    
+                .mm-button {
+                    transform: translateY(0);
+                    opacity: 0;
+                }
+            }
+        }    
+    }
+
+    // &.contracted {
+    //     width: 540px;
+
+    //     .base-mountain-zero {
+    //         img {
+    //             transform: translateX(-1.5rem) translateY(120px);
+    //             opacity: 0.25;
+    //         }
+    //     }
+
+    //     .foreground {
+    //         img {
+    //             transform: scaleX(1.15) scaleY(1) translateX(-25.5rem) translateY(0.4rem);
+    //             transition: transform $mm-timing-medium ease-in-out;
+    //         }
+    //     }
+
+    //     .masterminds-division-item-content {
+    //         .masterminds-division-item-blurb {
+    //             opacity: 0;
+    //             visibility: hidden;
+    //             transform: translateY(20px);
+    //         }
+
+    //         img.mm-brain {
+    //             transform: translateY(0);
+    //         }
+
+    //         .mm-button {
+    //             transform: translateY(0);
+    //             opacity: 0;
+    //         }
+    //     }
+    // }
 }

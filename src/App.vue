@@ -25,9 +25,11 @@
         </div>
 
         <div class="masterminds-divisions-container">
-            <DivisionItem :item-width="0" 
+            <DivisionItem :index-number="0" 
                 :is-hover="isDevOpsHover" 
                 :is-other-hover="isDevOpsOtherHover"
+                :division-class="divisionClasses[0]"
+                :division-class-expanded="divisionClassExpanded"
                 img-src="devops-masterminds-logo.png"
                 img-alt="devops masterminds brain"
                 blurb-one="Form, Flow and Fly"
@@ -35,9 +37,11 @@
                 @mouseenter="onHover('devops')" 
                 @mouseleave="onHover('none')" />
             
-            <DivisionItem :item-width="0" 
+            <DivisionItem :index-number="1" 
                 :is-hover="isDataHover" 
                 :is-other-hover="isDataOtherHover"
+                :division-class="divisionClasses[1]"
+                :division-class-expanded="divisionClassExpanded"
                 img-src="data-masterminds-logo.png"
                 img-alt="data masterminds brain"
                 blurb-one="Prepare, Prevent and Predict"
@@ -45,9 +49,11 @@
                 @mouseenter="onHover('data')" 
                 @mouseleave="onHover('none')" />
             
-            <DivisionItem :item-width="0" 
+            <DivisionItem :index-number="2" 
                 :is-hover="isAnalyticsHover" 
                 :is-other-hover="isAnalyticsOtherHover"
+                :division-class="divisionClasses[2]"
+                :division-class-expanded="divisionClassExpanded"
                 img-src="analytics-masterminds-logo.png"
                 img-alt="analytics masterminds brain"
                 blurb-one="Assemble, Analyze and Align"
@@ -75,6 +81,9 @@ export default defineComponent({
         const isDevOpsOtherHover = ref(false);
         const isDataOtherHover = ref(false);
         const isAnalyticsOtherHover = ref(false);
+        const divisionClassExpanded = ref('');
+
+        const divisionClasses = ['devops', 'data', 'analytics'];
 
         const onHover = (division: string) => {
             switch (division) {
@@ -87,6 +96,8 @@ export default defineComponent({
                     isDataOtherHover.value = true;
                     isAnalyticsOtherHover.value = true;
 
+                    divisionClassExpanded.value = 'devops';
+
                     break;
                 case 'data':
                     isDevOpsHover.value = false;
@@ -96,6 +107,8 @@ export default defineComponent({
                     isDevOpsOtherHover.value = true;
                     isDataOtherHover.value = false;
                     isAnalyticsOtherHover.value = true;
+
+                    divisionClassExpanded.value = 'data';
 
                     break;
                 case 'analytics':
@@ -107,6 +120,8 @@ export default defineComponent({
                     isDataOtherHover.value = true;
                     isAnalyticsOtherHover.value = false;
 
+                    divisionClassExpanded.value = 'analytics';
+
                     break;
                 default:
                     isDevOpsHover.value = false;
@@ -116,6 +131,8 @@ export default defineComponent({
                     isDevOpsOtherHover.value = false;
                     isDataOtherHover.value = false;
                     isAnalyticsOtherHover.value = false;
+
+                    divisionClassExpanded.value = '';
 
                     break;
             }
@@ -128,6 +145,8 @@ export default defineComponent({
             isDevOpsOtherHover,
             isDataOtherHover,
             isAnalyticsOtherHover,
+            divisionClassExpanded,
+            divisionClasses,
             onHover,
         };
     },
