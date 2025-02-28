@@ -13,8 +13,6 @@
     width: 540px;
     transition: width $mm-timing-medium ease-in-out;
 
-
-
     .base-mountain-zero {
         position: absolute;
         bottom: 0;
@@ -130,7 +128,7 @@
 
             .trees-one {
                 img {
-                    transform: translateX(5.5rem) translateY(6.5rem);
+                    transform: translateX(25.5rem) translateY(3.5rem);
                     transition: transform $mm-timing-medium ease-in-out;
                 }
             }
@@ -180,7 +178,7 @@
         &.data {
             .base-mountain-zero {
                 img {
-                    transform: translateX(-26rem) translateY(8.5rem);
+                    transform: translateX(-26rem) translateY(15rem);
                     opacity: 0.5;
                 }
             }
@@ -194,7 +192,7 @@
 
             .trees-one {
                 img {
-                    transform: translateX(5.5rem) translateY(6.5rem);
+                    transform: translateX(5.5rem) translateY(3.5rem);
                     transition: transform $mm-timing-medium ease-in-out;
                 }
             }
@@ -244,7 +242,7 @@
         &.analytics {
             .base-mountain-zero {
                 img {
-                    transform: translateX(-26rem) translateY(8.5rem);
+                    transform: translateX(-20rem) translateY(8.5rem);
                     opacity: 0.5;
                 }
             }
@@ -258,7 +256,7 @@
 
             .trees-one {
                 img {
-                    transform: translateX(5.5rem) translateY(6.5rem);
+                    transform: translateX(-1.2rem) translateY(1.5rem);
                     transition: transform $mm-timing-medium ease-in-out;
                 }
             }
@@ -303,72 +301,6 @@
                 }
             }
         }
-
-        // .base-mountain-zero {
-        //     img {
-        //         transform: translateX(-26rem) translateY(5.5rem);
-        //         opacity: 0.175;
-        //     }
-        // }
-
-        // .base-mountain-one {
-        //     img {
-        //         transform: translateX(-4rem) translateY(1.5rem);
-        //         opacity: 0.5;
-        //     }
-        // }
-
-        // .trees-one {
-        //     z-index: 4;
-
-        //     img {
-        //         transform: translateX(5.5rem) translateY(6.5rem);
-        //         transition: transform $mm-timing-medium ease-in-out;
-        //         z-index: 5;
-        //     }
-        // }
-
-        // .foreground {
-        //     z-index: 3;
-
-        //     img {
-        //         transform: translateX(-10rem) translateY(3rem);
-        //         transition: transform $mm-timing-medium ease-in-out;
-        //     }
-        // }
-
-        // .rock-one {
-        //     img {
-        //         opacity: 1;
-        //     }
-        // }
-
-        // .explorer {
-        //     img {
-        //         opacity: 1;
-        //     }
-        // }
-
-        // .masterminds-division-item-content {
-        //     .masterminds-division-item-blurb {
-        //         opacity: 1;
-        //         visibility: visible;
-        //         /* Allows fading smoothly */
-        //         transform: translateY(0);
-        //         /* Moves into place */
-        //     }
-
-        //     img.mm-brain {
-        //         transform: translateY(-10px);
-        //         /* Moves up slightly */
-        //     }
-
-        //     .mm-button {
-        //         transform: translateY(5px);
-        //         /* Moves down slightly */
-        //         opacity: 1;
-        //     }
-        // }
     }
 
     /* When DevOps is Expanded */
@@ -379,7 +311,7 @@
 
                 .base-mountain-zero {
                     img {
-                        transform: translateX(-27rem) translateY(120px);
+                        transform: translateX(-27rem) translateY(7.5rem);
                         opacity: 1;
                     }
                 }
@@ -418,7 +350,7 @@
 
                 .base-mountain-zero {
                     img {
-                        transform: translateX(-27rem) translateY(180px);
+                        transform: translateX(-27rem) translateY(11rem);
                         opacity: 1;
                     }
                 }
@@ -465,7 +397,7 @@
 
                 .foreground {
                     img {
-                        transform: translateX(-25.5rem) translateY(0.2rem);
+                        transform: translateX(-25.5rem) translateY(0.3rem);
                         transition: transform $mm-timing-medium ease-in-out;
                     }
                 }
@@ -576,7 +508,7 @@
 
                 .base-mountain-zero {
                     img {
-                        transform: translateX(-27rem) translateY(180px);
+                        transform: translateX(-27rem) translateY(12rem);
                         opacity: 1;
                     }
                 }
