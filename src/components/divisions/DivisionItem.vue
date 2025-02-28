@@ -1,5 +1,5 @@
 <template>
-    <div class="masterminds-division-item" :class="[divisionClass, isHover ? 'expanded' : isOtherHover ? 'contracted' : '']">
+    <div class="masterminds-division-item" :class="[divisionClass, isHover ? 'expanded' : isOtherHover ? 'contracted' : '', divisionClassExpanded ? divisionClassExpanded : '']">
         <div class="base-mountain-zero">
             <img src="../../assets/images/png/base-mountain-one.png" class="division-item" alt="Division Item Two">
         </div>

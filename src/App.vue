@@ -96,7 +96,7 @@ export default defineComponent({
                     isDataOtherHover.value = true;
                     isAnalyticsOtherHover.value = true;
 
-                    divisionClassExpanded.value = 'devops';
+                    divisionClassExpanded.value = 'devops-expanded';
 
                     break;
                 case 'data':
@@ -108,7 +108,7 @@ export default defineComponent({
                     isDataOtherHover.value = false;
                     isAnalyticsOtherHover.value = true;
 
-                    divisionClassExpanded.value = 'data';
+                    divisionClassExpanded.value = 'data-expanded';
 
                     break;
                 case 'analytics':
@@ -120,7 +120,7 @@ export default defineComponent({
                     isDataOtherHover.value = true;
                     isAnalyticsOtherHover.value = false;
 
-                    divisionClassExpanded.value = 'analytics';
+                    divisionClassExpanded.value = 'analytics-expanded';
 
                     break;
                 default:
