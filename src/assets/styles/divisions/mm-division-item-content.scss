@@ -8,10 +8,12 @@
     flex-direction: column;
     padding-bottom: 4rem;
     position: relative;
+    min-height: 300px;
     width: 100%;
 
     img.mm-brain {
         height: 4rem;
+        padding-top: 3rem; 
         width: 15rem;
         z-index: 7;
     }

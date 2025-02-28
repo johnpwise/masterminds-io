@@ -9,7 +9,7 @@
     align-items: center;
     overflow: hidden;
     position: relative;
-    height: 550px;
+    height: 650px;
     width: 540px;
     transition: width $mm-timing-medium ease-in-out;
 
@@ -22,7 +22,7 @@
 
         img {
             opacity: 1;
-            transform: translateX(-24rem) translateY(8rem);
+            transform: translateX(-25.5rem) translateY(8rem);
             transition: transform $mm-timing-medium ease-in-out, opacity $mm-timing-medium ease-in-out;
         }
     }
@@ -36,7 +36,7 @@
 
         img {
             opacity: 1;
-            transform: translateY(14rem);
+            transform: translateY(11.6rem);
             transition: transform $mm-timing-medium ease-in-out, opacity $mm-timing-medium ease-in-out;
         }
     }
@@ -162,14 +162,13 @@
                 }
 
                 img.mm-brain {
-                    transform: translateY(-10px);
-                    /* Moves up slightly */
+                    transform: scale(1.5) translateY(-2rem);
+                    transition: transform $mm-timing-medium ease-in-out;
                 }
 
                 .mm-button {
-                    transform: translateY(5px);
-                    /* Moves down slightly */
-                    opacity: 1;
+                    transform: translateY(1rem);
+                    transition: transform $mm-timing-medium ease-in-out;
                 }
             }
         }
@@ -226,14 +225,13 @@
                 }
 
                 img.mm-brain {
-                    transform: translateY(-10px);
-                    /* Moves up slightly */
+                    transform: scale(1.5) translateY(-2rem);
+                    transition: transform $mm-timing-medium ease-in-out;
                 }
 
                 .mm-button {
-                    transform: translateY(5px);
-                    /* Moves down slightly */
-                    opacity: 1;
+                    transform: translateY(1rem);
+                    transition: transform $mm-timing-medium ease-in-out;
                 }
             }
         }
@@ -290,14 +288,13 @@
                 }
 
                 img.mm-brain {
-                    transform: translateY(-10px);
-                    /* Moves up slightly */
+                    transform: scale(1.5) translateY(-2rem);
+                    transition: transform $mm-timing-medium ease-in-out;
                 }
 
                 .mm-button {
-                    transform: translateY(5px);
-                    /* Moves down slightly */
-                    opacity: 1;
+                    transform: translateY(1rem);
+                    transition: transform $mm-timing-medium ease-in-out;
                 }
             }
         }
