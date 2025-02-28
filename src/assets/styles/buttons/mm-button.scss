@@ -3,17 +3,15 @@
 @use '../sass/constants' as *;
 
 .mm-button {
-    display: flex;
-    /* Initially sized to fit just the text. */
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.625rem;
     background: $mm-turquoise;
+    border-radius: 0.625rem;
     color: $mm-white;
     cursor: pointer;
-    /* Smooth background color transition on hover */
+    display: flex;
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
     transition: background $mm-timing-short ease;
     z-index: 7;
-    font-size: 1.25rem;
 
     /* The text: ensure no wrapping */
     span {
@@ -22,13 +20,11 @@
 
     /* The arrow container: hidden initially */
     .arrow-icon {
-        /* Keep it in the same row without occupying space */
-        width: 0;
+        margin-left: 0;
         overflow: hidden;
         opacity: 0;
-        margin-left: 0;
-        /* Transition for width & opacity */
         transition: width $mm-timing-short ease, opacity $mm-timing-short ease, margin-left $mm-timing-short ease;
+        width: 0;
 
         font-awesome-icon {
             /* Optional: slight shift so it slides in */
@@ -41,12 +37,9 @@
         background: $mm-turquoise-hover;
 
         .arrow-icon {
-            /* Expand container to show the arrow */
-            width: 1rem;
-            /* Adjust as needed */
             margin-left: 0.5rem;
-            /* Creates a gap between text & arrow */
             opacity: 1;
+            width: 1rem;
 
             font-awesome-icon {
                 transform: translateX(0);

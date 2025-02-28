@@ -21,23 +21,23 @@
         z-index: 1;
 
         img {
+            opacity: 0.25;
             transform: translateX(-6rem) translateY(60px);
             transition: transform $mm-timing-medium ease-in-out, opacity $mm-timing-medium ease-in-out;
-            opacity: 0.25;
         }
     }
 
     .base-mountain-one {
-        position: absolute;
+        background-size: cover;
         bottom: 0;
         left: 0;
-        background-size: cover;
+        position: absolute;
         z-index: 2;
 
         img {
+            opacity: 0.25;
             transform: translateY(180px);
             transition: transform $mm-timing-medium ease-in-out, opacity $mm-timing-medium ease-in-out;
-            opacity: 0.25;
         }
     }
 
@@ -113,6 +113,7 @@
         .base-mountain-zero {
             img {
                 transform: translateX(-4rem) translateY(0.2rem);
+                opacity: 0.1;
             }
         }
 
@@ -150,6 +151,27 @@
 
         .explorer {
             img {
+                opacity: 1;
+            }
+        }
+
+        .masterminds-division-item-content {
+            .masterminds-division-item-blurb {
+                opacity: 1;
+                visibility: visible;
+                /* Allows fading smoothly */
+                transform: translateY(0);
+                /* Moves into place */
+            }
+
+            img.mm-brain {
+                transform: translateY(-10px);
+                /* Moves up slightly */
+            }
+
+            .mm-button {
+                transform: translateY(5px);
+                /* Moves down slightly */
                 opacity: 1;
             }
         }
