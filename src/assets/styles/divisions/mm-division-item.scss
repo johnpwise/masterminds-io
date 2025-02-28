@@ -22,7 +22,7 @@
 
         img {
             opacity: 0.25;
-            transform: translateX(-6rem) translateY(60px);
+            transform: translateX(-6rem) translateY(75px);
             transition: transform $mm-timing-medium ease-in-out, opacity $mm-timing-medium ease-in-out;
         }
     }
@@ -112,14 +112,14 @@
 
         .base-mountain-zero {
             img {
-                transform: translateX(-4rem) translateY(0.2rem);
+                transform: translateX(-1rem) translateY(1rem);
                 opacity: 0.1;
             }
         }
 
         .base-mountain-one {
             img {
-                transform: translateX(-4rem) translateY(0.2rem);
+                transform: translateX(-4rem) translateY(4rem);
                 opacity: 0.5;
             }
         }
@@ -173,6 +173,66 @@
                 transform: translateY(5px);
                 /* Moves down slightly */
                 opacity: 1;
+            }
+        }
+    }
+
+    &.contracted {
+        width: 540px;
+
+        .base-mountain-zero {
+            img {
+                transform: translateX(-1.5rem) translateY(120px);
+                opacity: 0.25;
+            }
+        }
+
+        // .base-mountain-one {
+        //     img {
+        //         transform: translateY(180px);
+        //         opacity: 0.25;
+        //     }
+        // }
+
+        // .trees-one {
+        //     img {
+        //         transform: translateX(0.5rem) translateY(6.5rem);
+        //     }
+        // }
+
+        .foreground {
+            img {
+                transform: scaleY(2) translateX(-5.5rem) translateY(-2rem);
+                transition: transform $mm-timing-medium ease-in-out;
+            }
+        }
+
+        // .rock-one {
+        //     img {
+        //         opacity: 0;
+        //     }
+        // }
+
+        // .explorer {
+        //     img {
+        //         opacity: 0;
+        //     }
+        // }
+
+        .masterminds-division-item-content {
+            .masterminds-division-item-blurb {
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(20px);
+            }
+
+            img.mm-brain {
+                transform: translateY(0);
+            }
+
+            .mm-button {
+                transform: translateY(0);
+                opacity: 0;
             }
         }
     }
