@@ -17,7 +17,7 @@
         </div>
 
         <div class="foreground">
-            <img src="../../assets/images/png/foreground.png" class="division-item" alt="Division Item Two">
+            <img src="../../assets/images/svg/foreground.svg" class="division-item" alt="Division Item Two">
         </div>
 
         <div class="rock-one">
