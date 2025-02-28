@@ -13,6 +13,8 @@
     width: 540px;
     transition: width $mm-timing-medium ease-in-out;
 
+    
+
     .base-mountain-zero {
         position: absolute;
         bottom: 0;
@@ -21,7 +23,7 @@
         z-index: 1;
 
         img {
-            opacity: 0.25;
+            opacity: 1;
             transform: translateX(-27rem) translateY(180px);
             transition: transform $mm-timing-medium ease-in-out, opacity $mm-timing-medium ease-in-out;
         }
@@ -35,7 +37,7 @@
         z-index: 2;
 
         img {
-            opacity: 0.25;
+            opacity: 0;
             transform: translateY(220px);
             transition: transform $mm-timing-medium ease-in-out, opacity $mm-timing-medium ease-in-out;
         }
@@ -110,16 +112,79 @@
     &:hover {
         width: 1000px;
 
+        &.devops {
+            .base-mountain-zero {
+                img {
+                    transform: translateX(-30rem) translateY(8.5rem);
+                    opacity: 1;
+                }
+            }
+
+            .base-mountain-one {
+                img {
+                    transform: translateX(-15rem) translateY(8rem) scale(1.5);
+                    opacity: 1;
+                }
+            }
+
+            .trees-one {
+                img {
+                    transform: translateX(5.5rem) translateY(6.5rem);
+                    transition: transform $mm-timing-medium ease-in-out;
+                }
+            }
+
+            .foreground {
+                img {
+                    transform: translateX(-10rem) translateY(3rem);
+                    transition: transform $mm-timing-medium ease-in-out;
+                }
+            }
+
+            .rock-one {
+                img {
+                    opacity: 1;
+                }
+            }
+
+            .explorer {
+                img {
+                    opacity: 1;
+                }
+            }
+
+            .masterminds-division-item-content {
+                .masterminds-division-item-blurb {
+                    opacity: 1;
+                    visibility: visible;
+                    /* Allows fading smoothly */
+                    transform: translateY(0);
+                    /* Moves into place */
+                }
+
+                img.mm-brain {
+                    transform: translateY(-10px);
+                    /* Moves up slightly */
+                }
+
+                .mm-button {
+                    transform: translateY(5px);
+                    /* Moves down slightly */
+                    opacity: 1;
+                }
+            }
+        }
+
         .base-mountain-zero {
             img {
-                transform: translateX(-1rem) translateY(1rem);
-                opacity: 0.1;
+                transform: translateX(-26rem) translateY(5.5rem);
+                opacity: 0.175;
             }
         }
 
         .base-mountain-one {
             img {
-                transform: translateX(-4rem) translateY(4rem);
+                transform: translateX(-4rem) translateY(1.5rem);
                 opacity: 0.5;
             }
         }
@@ -177,79 +242,85 @@
         }
     }
 
-    &.data {
-        &.contracted {
-            width: 540px;
-    
-            .base-mountain-zero {
-                img {
-                    transform: translateX() translateY(60px);
-                    opacity: 0.25;
-                }
-            }
-    
-            .foreground {
-                img {
-                    transform: scaleX(1.15) scaleY(1) translateX(-25.5rem) translateY(3.2rem);
-                    transition: transform $mm-timing-medium ease-in-out;
-                }
-            }
-    
-            .masterminds-division-item-content {
-                .masterminds-division-item-blurb {
-                    opacity: 0;
-                    visibility: hidden;
-                    transform: translateY(20px);
-                }
-    
-                img.mm-brain {
-                    transform: translateY(0);
-                }
-    
-                .mm-button {
-                    transform: translateY(0);
-                    opacity: 0;
-                }
-            }
-        }    
-    }
+    // &.data,
+    // &.contracted {
+    //     width: 540px;
 
-    &.analytics {
-        &.contracted {
-            width: 540px;
-    
-            .base-mountain-zero {
-                img {
-                    transform: translateX(-1.5rem) translateY(120px);
-                    opacity: 0.25;
-                }
-            }
-    
-            .foreground {
-                img {
-                    transform: scaleX(1.15) scaleY(1) translateX(-25.5rem) translateY(3.2rem);
-                    transition: transform $mm-timing-medium ease-in-out;
-                }
-            }
-    
-            .masterminds-division-item-content {
-                .masterminds-division-item-blurb {
-                    opacity: 0;
-                    visibility: hidden;
-                    transform: translateY(20px);
-                }
-    
-                img.mm-brain {
-                    transform: translateY(0);
-                }
-    
-                .mm-button {
-                    transform: translateY(0);
-                    opacity: 0;
-                }
-            }
-        }    
-    }
+    //     .base-mountain-zero {
+    //         img {
+    //             transform: translateX(-27rem) translateY(120px);
+    //             opacity: 0.25;
+    //         }
+    //     }
+
+    //     // .base-mountain-one {
+    //     //     img {
+    //     //         transform: translateY(220px);
+    //     //         opacity: 0.25;
+    //     //     }
+    //     // }
+
+    //     .foreground {
+    //         img {
+    //             transform: scaleX(1.15) scaleY(1) translateX(-25.5rem) translateY(3.2rem);
+    //             transition: transform $mm-timing-medium ease-in-out;
+    //         }
+    //     }
+
+    //     .masterminds-division-item-content {
+    //         .masterminds-division-item-blurb {
+    //             opacity: 0;
+    //             visibility: hidden;
+    //             transform: translateY(20px);
+    //         }
+
+    //         img.mm-brain {
+    //             transform: translateY(0);
+    //         }
+
+    //         .mm-button {
+    //             transform: translateY(0);
+    //             opacity: 0;
+    //         }
+    //     }
+    // }
+
+    // &.analytics {
+    //     &.contracted {
+    //         width: 540px;
+
+    //         .base-mountain-zero {
+    //             img {
+    //                 transform: translateX(-1.5rem) translateY(120px);
+    //                 opacity: 0.25;
+    //             }
+    //         }
+
+    //         .foreground {
+    //             img {
+    //                 transform: scaleX(1.15) scaleY(1) translateX(-25.5rem) translateY(3.2rem);
+    //                 transition: transform $mm-timing-medium ease-in-out;
+    //             }
+    //         }
+
+    //         .masterminds-division-item-content {
+    //             .masterminds-division-item-blurb {
+    //                 opacity: 0;
+    //                 visibility: hidden;
+    //                 transform: translateY(20px);
+    //             }
+
+    //             img.mm-brain {
+    //                 transform: translateY(0);
+    //             }
+
+    //             .mm-button {
+    //                 transform: translateY(0);
+    //                 opacity: 0;
+    //             }
+    //         }
+    //     }
+    // }
 
     // &.contracted {
     //     width: 540px;
