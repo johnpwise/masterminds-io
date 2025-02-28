@@ -1,0 +1,95 @@
+@use "sass:color";
+@use './sass/colors' as *;
+
+.masterminds {
+    // border: 1px solid #000;
+    width: 101.25rem;
+    height: 34.4375rem;
+    flex-shrink: 0;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, #FFF 46.5%);
+
+    .masterminds-header {
+        display: flex;
+        flex-direction: row;
+        /* Changed from column */
+        justify-content: space-between;
+        /* Places logo on left and nav on right */
+        align-items: center;
+        /* Vertical alignment */
+        padding: 1rem 1rem 5rem 1rem;
+        /* Optional padding */
+
+        .masterminds-logo {
+            display: flex;
+            width: 15rem;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .masterminds-nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 1.25rem;
+            padding: 0.625rem 0;
+
+            .masterminds-nav-item {
+                color: #000;
+                font-size: 1.125rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .masterminds-hero {
+        // border: 1px solid #000;
+        /* Center this container within .masterminds */
+        max-width: 65rem;
+        /* or any width you prefer */
+        margin: 0 auto;
+        padding: 1rem;
+
+        /* Flex layout for vertical stacking if needed */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* Left-align items within the container */
+        gap: 1.25rem;
+
+        /* Globally left-align text inside this container */
+        text-align: left;
+
+        .masterminds-hero-title {
+            /* Remove or override any center alignment */
+            text-align: left;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: normal;
+
+            .statement {
+                text-align: left;
+                font-size: 6.25rem;
+                line-height: 5rem;
+                color: $mm-black;
+                font-weight: 400;
+            }
+
+            .bold {
+                color: $mm-turquoise;
+                font-weight: 700;
+            }
+        }
+
+        .masterminds-hero-description {
+            text-align: left;
+            font-size: 1.75rem;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+
+}

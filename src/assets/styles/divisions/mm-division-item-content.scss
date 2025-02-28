@@ -1,0 +1,24 @@
+@use "sass:color";
+@use '../sass/colors' as *;
+@use '../sass/constants' as *;
+
+.masterminds-division-item-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 100%;
+
+    img.mm-brain {
+        width: 15rem;
+        height: 4rem;
+        padding-bottom: 2.5rem;
+        // transform: translateX(8rem) translateY(-8rem);
+        z-index: 7;
+    }
+
+    .masterminds-division-item-blurb {
+        display: none;
+        z-index: 7;
+    }
+}

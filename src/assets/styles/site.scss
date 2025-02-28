@@ -1,0 +1,29 @@
+@use "sass:color";
+@use './sass/colors' as *;
+@use './sass/constants' as *;
+
+@use './masterminds.scss';
+@use './divisions/mm-division-container.scss';
+@use './divisions/mm-division-item.scss';
+@use './divisions/mm-division-item-content.scss';
+
+@use './buttons/mm-button.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+html,
+body,
+#app {
+    height: 1400px;
+    width: 100vw;
+    background: $mm-white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    // align-items: center;
+    /* Centers vertically */
+    overflow: hidden;
+}
