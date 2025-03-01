@@ -14,10 +14,10 @@
     transition: width $mm-timing-medium ease-in-out;
 
     .base-mountain-zero {
-        position: absolute;
+        background-size: cover;
         bottom: 0;
         left: 0;
-        background-size: cover;
+        position: absolute;
         z-index: 1;
 
         img {
@@ -56,10 +56,10 @@
     }
 
     .foreground {
-        position: absolute;
+        background-size: cover;
         bottom: 0;
         left: 0;
-        background-size: cover;
+        position: absolute;
         z-index: 4;
 
         img {
@@ -69,30 +69,30 @@
     }
 
     .rock-one {
-        position: absolute;
+        background-size: cover;
         bottom: 0;
         left: 0;
-        background-size: cover;
+        position: absolute;
         z-index: 5;
 
         img {
+            opacity: 0;
             transform: translateX(-21rem) translateY(6.6rem);
             transition: transform $mm-timing-medium ease-in-out, opacity $mm-timing-medium ease-in-out;
-            opacity: 0;
         }
     }
 
     .explorer {
-        position: absolute;
+        background-size: cover;
         bottom: 0;
         left: 0;
-        background-size: cover;
+        position: absolute;
         z-index: 6;
 
         img {
+            opacity: 0;
             transform: translateX(3.5rem) translateY(-4.6rem);
             transition: transform $mm-timing-medium ease-in-out, opacity $mm-timing-medium ease-in-out;
-            opacity: 0;
         }
     }
 
@@ -103,15 +103,15 @@
         &.devops {
             .base-mountain-zero {
                 img {
-                    transform: translateX(-17rem) translateY(1rem) scale(0.5);
                     opacity: 0.5;
+                    transform: translateX(-17rem) translateY(1rem) scale(0.5);
                 }
             }
 
             .base-mountain-one {
                 img {
-                    transform: translateX(-10rem) translateY(3rem) scale(1.2);
                     opacity: 1;
+                    transform: translateX(-10rem) translateY(3rem) scale(1.2);
                 }
             }
 
@@ -147,8 +147,8 @@
             .masterminds-division-item-content {
                 .masterminds-division-item-blurb {
                     opacity: 1;
-                    visibility: visible;
                     transform: translateY(0);
+                    visibility: visible;
                 }
 
                 img.mm-brain {
@@ -157,7 +157,6 @@
 
                 .mm-button {
                     transform: translateY(1rem);
-                    // transition: transform $mm-timing-medium ease-in-out;
                 }
             }
         }
@@ -206,8 +205,8 @@
             .masterminds-division-item-content {
                 .masterminds-division-item-blurb {
                     opacity: 1;
-                    visibility: visible;
                     transform: translateY(0);
+                    visibility: visible;
                 }
 
                 img.mm-brain {
@@ -216,7 +215,6 @@
 
                 .mm-button {
                     transform: translateY(1rem);
-                    transition: transform $mm-timing-medium ease-in-out;
                 }
             }
         }
@@ -264,8 +262,8 @@
             .masterminds-division-item-content {
                 .masterminds-division-item-blurb {
                     opacity: 1;
-                    visibility: visible;
                     transform: translateY(0);
+                    visibility: visible;
                 }
 
                 img.mm-brain {
@@ -274,7 +272,6 @@
 
                 .mm-button {
                     transform: translateY(1rem);
-                    transition: transform $mm-timing-medium ease-in-out;
                 }
             }
         }
@@ -309,8 +306,8 @@
                 .masterminds-division-item-content {
                     .masterminds-division-item-blurb {
                         opacity: 0;
-                        visibility: hidden;
                         transform: translateY(20px);
+                        visibility: hidden;
                     }
 
                     img.mm-brain {
@@ -318,8 +315,8 @@
                     }
 
                     .mm-button {
-                        transform: translateY(0);
                         opacity: 0;
+                        transform: translateY(0);
                     }
                 }
             }
@@ -354,8 +351,8 @@
                 .masterminds-division-item-content {
                     .masterminds-division-item-blurb {
                         opacity: 0;
-                        visibility: hidden;
                         transform: translateY(20px);
+                        visibility: hidden;
                     }
 
                     img.mm-brain {
@@ -363,8 +360,8 @@
                     }
 
                     .mm-button {
-                        transform: translateY(0);
                         opacity: 0;
+                        transform: translateY(0);
                     }
                 }
             }
@@ -392,8 +389,8 @@
                 .masterminds-division-item-content {
                     .masterminds-division-item-blurb {
                         opacity: 0;
-                        visibility: hidden;
                         transform: translateY(20px);
+                        visibility: hidden;
                     }
 
                     img.mm-brain {
@@ -401,8 +398,8 @@
                     }
 
                     .mm-button {
-                        transform: translateY(0);
                         opacity: 0;
+                        transform: translateY(0);
                     }
                 }
             }
@@ -437,8 +434,8 @@
                 .masterminds-division-item-content {
                     .masterminds-division-item-blurb {
                         opacity: 0;
-                        visibility: hidden;
                         transform: translateY(20px);
+                        visibility: hidden;
                     }
 
                     img.mm-brain {
@@ -446,8 +443,8 @@
                     }
 
                     .mm-button {
-                        transform: translateY(0);
                         opacity: 0;
+                        transform: translateY(0);
                     }
                 }
             }
@@ -483,8 +480,8 @@
                 .masterminds-division-item-content {
                     .masterminds-division-item-blurb {
                         opacity: 0;
-                        visibility: hidden;
                         transform: translateY(20px);
+                        visibility: hidden;
                     }
 
                     img.mm-brain {
@@ -492,8 +489,8 @@
                     }
 
                     .mm-button {
-                        transform: translateY(0);
                         opacity: 0;
+                        transform: translateY(0);
                     }
                 }
             }
@@ -521,8 +518,8 @@
                 .masterminds-division-item-content {
                     .masterminds-division-item-blurb {
                         opacity: 0;
-                        visibility: hidden;
                         transform: translateY(20px);
+                        visibility: hidden;
                     }
 
                     img.mm-brain {
@@ -530,8 +527,8 @@
                     }
 
                     .mm-button {
-                        transform: translateY(0);
                         opacity: 0;
+                        transform: translateY(0);
                     }
                 }
             }
