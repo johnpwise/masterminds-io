@@ -1,31 +1,31 @@
 <template>
     <div class="masterminds-division-item" :class="[divisionClass, isHover ? 'expanded' : isOtherHover ? 'contracted' : '', divisionClassExpanded ? divisionClassExpanded : '']">
         <div class="base-mountain-zero">
-            <img src="../../assets/images/png/base-mountain-one.png" class="division-item" alt="Division Item Two">
+            <img src="../../assets/images/svg/base-mountain-one-masked.svg" class="division-item" alt="Division Item Two">
         </div>
 
         <div class="base-mountain-one">
-            <img src="../../assets/images/png/base-mountain-one.png" class="division-item" alt="Division Item Two">
+            <img src="../../assets/images/svg/base-mountain-one-masked.svg" class="division-item" alt="Division Item Two">
         </div>
 
         <div class="trees-one">
-            <img src="../../assets/images/png/trees.png" class="division-item" alt="Division Item Two">
+            <img src="../../assets/images/svg/trees.svg" class="division-item" alt="Division Item Two">
         </div>
 
-        <div class="trees-two">
-            <img src="../../assets/images/png/trees.png" class="division-item" alt="Division Item Two">
-        </div>
+        <!-- <div class="trees-two">
+            <img src="../../assets/images/svg/trees.svg" class="division-item" alt="Division Item Two">
+        </div> -->
 
         <div class="foreground">
             <img src="../../assets/images/svg/foreground.svg" class="division-item" alt="Division Item Two">
         </div>
 
         <div class="rock-one">
-            <img src="../../assets/images/png/rock-one.png" class="division-item" alt="Division Item Two">
+            <img src="../../assets/images/svg/rock-one.svg" class="division-item" alt="Division Item Two">
         </div>
 
         <div class="explorer">
-            <img src="../../assets/images/png/mm-explorer-solo.png" class="division-item" alt="Division Item Two">
+            <img src="../../assets/images/svg/mm-explorer.svg" class="division-item" alt="Division Item Two">
         </div>
 
         <div class="masterminds-division-item-content">
@@ -60,7 +60,7 @@ export default defineComponent({
         imgSrc: {
             type: String,
             required: true,
-            default: 'masterminds-logo.png',
+            default: 'masterminds-logo.svg',
         },
         imgAlt: String,
         blurbOne: String,

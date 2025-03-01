@@ -1,0 +1,39 @@
+# Node modules and build artifacts
+node_modules
+dist
+
+# Logs
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+
+# Docker files
+Dockerfile
+.dockerignore
+
+# Git files
+.git
+.gitignore
+
+# Environment variables
+# *.env
+# .env.local
+# .env.development
+# .env.production
+
+# Editor/OS metadata
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Test and coverage files
+coverage
+**/__tests__/
+**/*.spec.*
+**/*.test.*
+
+# CI/CD artifacts
+.circleci/
+.github/
+.gitlab-ci.yml

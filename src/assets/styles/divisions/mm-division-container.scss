@@ -8,4 +8,8 @@
     align-items: center;
     overflow: hidden;
     position: relative;
+
+    @media (max-width: 1619px) {
+        flex-direction: column;
+    }
 }
