@@ -10,15 +10,13 @@
     display: flex;
     font-size: 1.25rem;
     padding: 0.75rem 1.5rem;
-    transition: background $mm-timing-short ease;
+    transition: all $mm-timing-short ease;
     z-index: 7;
 
-    /* The text: ensure no wrapping */
     span {
         white-space: nowrap;
     }
 
-    /* The arrow container: hidden initially */
     .arrow-icon {
         margin-left: 0;
         opacity: 0;
@@ -27,7 +25,6 @@
         width: 0;
 
         font-awesome-icon {
-            /* Optional: slight shift so it slides in */
             transform: translateX(-1rem);
             transition: transform $mm-timing-short ease;
         }

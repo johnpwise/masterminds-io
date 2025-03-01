@@ -13,7 +13,8 @@
 
     img.mm-brain {
         height: 4rem;
-        padding-top: 3rem; 
+        padding-top: 3rem;
+        transition: transform $mm-timing-medium ease-in-out;
         width: 15rem;
         z-index: 7;
     }
@@ -23,7 +24,7 @@
         font-weight: 300;
         opacity: 0;
         padding: 0 0 2rem 0;
-        transition: opacity $mm-timing-medium ease-in-out;
+        transition: all $mm-timing-medium ease-in-out;
         visibility: hidden;
         z-index: 7;
     }

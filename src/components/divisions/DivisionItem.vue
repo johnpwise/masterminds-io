@@ -1,31 +1,27 @@
 <template>
     <div class="masterminds-division-item" :class="[divisionClass, isHover ? 'expanded' : isOtherHover ? 'contracted' : '', divisionClassExpanded ? divisionClassExpanded : '']">
         <div class="base-mountain-zero">
-            <img src="../../assets/images/svg/base-mountain-one-masked.svg" class="division-item" alt="Division Item Two">
+            <img src="../../assets/images/svg/base-mountain-one-masked.svg" class="division-item" alt="Alpine Mountain Range">
         </div>
 
         <div class="base-mountain-one">
-            <img src="../../assets/images/svg/base-mountain-one-masked.svg" class="division-item" alt="Division Item Two">
+            <img src="../../assets/images/svg/base-mountain-one-masked.svg" class="division-item" alt="Alpine Mountain Range">
         </div>
 
-        <div class="trees-one">
-            <img src="../../assets/images/svg/trees.svg" class="division-item" alt="Division Item Two">
+        <div class="trees">
+            <img src="../../assets/images/svg/trees.svg" class="division-item" alt="Coniferous Trees">
         </div>
-
-        <!-- <div class="trees-two">
-            <img src="../../assets/images/svg/trees.svg" class="division-item" alt="Division Item Two">
-        </div> -->
 
         <div class="foreground">
-            <img src="../../assets/images/svg/foreground.svg" class="division-item" alt="Division Item Two">
+            <img src="../../assets/images/svg/foreground.svg" class="division-item" alt="Ridge Line">
         </div>
 
         <div class="rock-one">
-            <img src="../../assets/images/svg/rock-one.svg" class="division-item" alt="Division Item Two">
+            <img src="../../assets/images/svg/rock-one.svg" class="division-item" alt="Outcropping">
         </div>
 
         <div class="explorer">
-            <img src="../../assets/images/svg/mm-explorer.svg" class="division-item" alt="Division Item Two">
+            <img src="../../assets/images/svg/mm-explorer.svg" class="division-item" alt="Explorer">
         </div>
 
         <div class="masterminds-division-item-content">

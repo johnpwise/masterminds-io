@@ -10,7 +10,6 @@
     overflow: hidden;
     position: relative;
     height: 50rem;
-    // width: 540px;
     width: 100%;
     transition: width $mm-timing-medium ease-in-out;
 
@@ -42,7 +41,7 @@
         }
     }
 
-    .trees-one {
+    .trees {
         background-size: cover;
         bottom: 0;
         left: 0;
@@ -52,20 +51,6 @@
         img {
             opacity: 0;
             transform: translateX(0.5rem) translateY(6.5rem);
-            transition: transform $mm-timing-medium ease-in-out, opacity $mm-timing-medium ease-in-out;
-        }
-    }
-
-    .trees-two {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background-size: cover;
-        z-index: 3;
-
-        img {
-            opacity: 0;
-            transform: translateX(-3rem) translateY(6.5rem);
             transition: transform $mm-timing-medium ease-in-out, opacity $mm-timing-medium ease-in-out;
         }
     }
@@ -130,13 +115,12 @@
                 }
             }
 
-            .trees-one {
+            .trees {
                 z-index: 4;
 
                 img {
                     opacity: 1;
                     transform: translateX(10rem) translateY(3.5rem);
-                    // transition: transform $mm-timing-medium ease-in-out;
                 }
             }
 
@@ -145,7 +129,6 @@
                 
                 img {
                     transform: translateX(-10rem) translateY(3.6rem);
-                    // transition: transform $mm-timing-medium ease-in-out;
                 }
             }
 
@@ -165,14 +148,11 @@
                 .masterminds-division-item-blurb {
                     opacity: 1;
                     visibility: visible;
-                    /* Allows fading smoothly */
                     transform: translateY(0);
-                    /* Moves into place */
                 }
 
                 img.mm-brain {
                     transform: scale(1.5) translateY(-2rem);
-                    // transition: transform $mm-timing-medium ease-in-out;
                 }
 
                 .mm-button {
@@ -198,18 +178,16 @@
                 }
             }
 
-            .trees-one {
+            .trees {
                 img {
                     opacity: 1;
                     transform: translateX(35.5rem) translateY(3.5rem);
-                    // transition: transform $mm-timing-medium ease-in-out;
                 }
             }
 
             .foreground {
                 img {
                     transform: translateX(-5rem) translateY(4rem);
-                    // transition: transform $mm-timing-medium ease-in-out;
                 }
             }
 
@@ -229,19 +207,16 @@
                 .masterminds-division-item-blurb {
                     opacity: 1;
                     visibility: visible;
-                    /* Allows fading smoothly */
                     transform: translateY(0);
-                    /* Moves into place */
                 }
 
                 img.mm-brain {
                     transform: scale(1.5) translateY(-2rem);
-                    // transition: transform $mm-timing-medium ease-in-out;
                 }
 
                 .mm-button {
                     transform: translateY(1rem);
-                    // transition: transform $mm-timing-medium ease-in-out;
+                    transition: transform $mm-timing-medium ease-in-out;
                 }
             }
         }
@@ -262,17 +237,15 @@
                 }
             }
 
-            .trees-one {
+            .trees {
                 img {
                     transform: translateX(-1.2rem) translateY(1.5rem);
-                    // transition: transform $mm-timing-medium ease-in-out;
                 }
             }
 
             .foreground {
                 img {
                     transform: translateX(-2.5rem) translateY(3rem) scale(0.8);
-                    // transition: transform $mm-timing-medium ease-in-out;
                 }
             }
 
@@ -292,19 +265,16 @@
                 .masterminds-division-item-blurb {
                     opacity: 1;
                     visibility: visible;
-                    /* Allows fading smoothly */
                     transform: translateY(0);
-                    /* Moves into place */
                 }
 
                 img.mm-brain {
                     transform: scale(1.5) translateY(-2rem);
-                    // transition: transform $mm-timing-medium ease-in-out;
                 }
 
                 .mm-button {
                     transform: translateY(1rem);
-                    // transition: transform $mm-timing-medium ease-in-out;
+                    transition: transform $mm-timing-medium ease-in-out;
                 }
             }
         }
@@ -326,22 +296,13 @@
                 .foreground {
                     img {
                         transform: translateX(-29.5rem) translateY(3.8rem);
-                        // transition: transform $mm-timing-medium ease-in-out;
                     }
                 }
 
-                .trees-one {
+                .trees {
                     img {
                         opacity: 1;
                         transform: translateX(18.3rem) translateY(3.5rem);
-                        // transition: transform $mm-timing-medium ease-in-out;
-                    }
-                }
-
-                .trees-two {
-                    img {
-                        transform: translateX(-5rem) translateY(4.5rem);
-                        // transition: transform $mm-timing-medium ease-in-out;
                     }
                 }
 
@@ -380,15 +341,13 @@
                 .foreground {
                     img {
                         transform: translateX(-27.5rem) translateY(3.8rem);
-                        // transition: transform $mm-timing-medium ease-in-out;
                     }
                 }
 
-                .trees-one {
+                .trees {
                     img {
                         opacity: 1;
                         transform: translateX(-8rem) translateY(3.5rem);
-                        // transition: transform $mm-timing-medium ease-in-out;
                     }
                 }
 
@@ -427,7 +386,6 @@
                 .foreground {
                     img {
                         transform: translateX(-25.5rem) translateY(0.3rem);
-                        // transition: transform $mm-timing-medium ease-in-out;
                     }
                 }
 
@@ -465,11 +423,10 @@
                 .foreground {
                     img {
                         transform: translateX(-30.0rem) translateY(4.5rem);
-                        // transition: transform $mm-timing-medium ease-in-out;
                     }
                 }
 
-                .trees-one {
+                .trees {
                     img {
                         opacity: 1;
                         transform: translateX(-8rem) translateY(2.5rem);
@@ -513,15 +470,13 @@
                 .foreground {
                     img {
                         transform: translateX(-25.5rem) translateY(2.4rem);
-                        // transition: transform $mm-timing-medium ease-in-out;
                     }
                 }
 
-                .trees-one {
+                .trees {
                     img {
                         opacity: 1;
                         transform: translateX(10rem) translateY(3.5rem);
-                        // transition: transform $mm-timing-medium ease-in-out;
                     }
                 }
 
@@ -560,7 +515,6 @@
                 .foreground {
                     img {
                         transform: translateX(-25.5rem) translateY(0.4rem);
-                        // transition: transform $mm-timing-medium ease-in-out;
                     }
                 }
 
