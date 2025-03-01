@@ -33,7 +33,7 @@
                 img-src="devops-masterminds-logo.png"
                 img-alt="devops masterminds brain"
                 blurb-one="Form, Flow and Fly"
-                blurb-two="with our DevOps Maturity Model"
+                blurb-two="with our DevOps Maturity Model."
                 @mouseenter="onHover('devops')" 
                 @mouseleave="onHover('none')" />
             
@@ -45,7 +45,7 @@
                 img-src="data-masterminds-logo.png"
                 img-alt="data masterminds brain"
                 blurb-one="Prepare, Prevent and Predict"
-                blurb-two="with our Data Maturity Model"
+                blurb-two="with our Data Maturity Model."
                 @mouseenter="onHover('data')" 
                 @mouseleave="onHover('none')" />
             
@@ -57,7 +57,7 @@
                 img-src="analytics-masterminds-logo.png"
                 img-alt="analytics masterminds brain"
                 blurb-one="Assemble, Analyze and Align"
-                blurb-two="with our Analytics Maturity Model"
+                blurb-two="with our Analytics Maturity Model."
                 @mouseenter="onHover('analytics')" 
                 @mouseleave="onHover('none')" />
         </div>
