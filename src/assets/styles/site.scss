@@ -15,18 +15,14 @@ html,
 body,
 #app {
     // min-height: 100vh;
-    width: 100vw;
     background: $mm-white;
-    font-family: 'PT Sans Narrow', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     display: flex;
+    font-family: 'PT Sans Narrow', sans-serif;
     justify-content: center;
-    /* Centers horizontally */
-    // align-items: center;
-    /* Centers vertically */
     overflow: hidden;
-
+    width: 100vw;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
     // @media (max-width: 1619px), (max-height: 75rem) {
     //     overflow: auto;
     // }
