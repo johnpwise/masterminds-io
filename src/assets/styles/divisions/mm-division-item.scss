@@ -9,7 +9,7 @@
     align-items: center;
     overflow: hidden;
     position: relative;
-    height: 50rem;
+    height: 37rem;
     width: 100%;
     transition: width $mm-timing-medium ease-in-out;
 
@@ -146,6 +146,7 @@
 
             .masterminds-division-item-content {
                 .masterminds-division-item-blurb {
+                    font-size: 1.2rem;
                     opacity: 1;
                     transform: translateY(0);
                     visibility: visible;
@@ -165,15 +166,15 @@
         &.data {
             .base-mountain-zero {
                 img {
-                    transform: translateX(-26rem) translateY(8.5rem);
                     opacity: 0.5;
+                    transform: translateX(-26rem) translateY(8.5rem);
                 }
             }
 
             .base-mountain-one {
                 img {
-                    transform: translateX(-5rem) translateY(3rem);
                     opacity: 1;
+                    transform: translateX(-5rem) translateY(3rem);
                 }
             }
 
@@ -204,6 +205,7 @@
 
             .masterminds-division-item-content {
                 .masterminds-division-item-blurb {
+                    font-size: 1.2rem;
                     opacity: 1;
                     transform: translateY(0);
                     visibility: visible;
@@ -230,8 +232,8 @@
 
             .base-mountain-one {
                 img {
-                    transform: translateX(-5rem) translateY(3rem);
                     opacity: 1;
+                    transform: translateX(-5rem) translateY(3rem);
                 }
             }
 
@@ -261,6 +263,7 @@
 
             .masterminds-division-item-content {
                 .masterminds-division-item-blurb {
+                    font-size: 1.2rem;
                     opacity: 1;
                     transform: translateY(0);
                     visibility: visible;
@@ -285,8 +288,8 @@
 
                 .base-mountain-zero {
                     img {
-                        transform: translateX(-20rem) translateY(3.0rem) scale(0.65);
                         opacity: 1;
+                        transform: translateX(-20rem) translateY(3.0rem) scale(0.65);
                     }
                 }
 
@@ -304,12 +307,6 @@
                 }
 
                 .masterminds-division-item-content {
-                    .masterminds-division-item-blurb {
-                        opacity: 0;
-                        transform: translateY(20px);
-                        visibility: hidden;
-                    }
-
                     img.mm-brain {
                         transform: translateY(0);
                     }
@@ -349,12 +346,6 @@
                 }
 
                 .masterminds-division-item-content {
-                    .masterminds-division-item-blurb {
-                        opacity: 0;
-                        transform: translateY(20px);
-                        visibility: hidden;
-                    }
-
                     img.mm-brain {
                         transform: translateY(0);
                     }
@@ -387,12 +378,6 @@
                 }
 
                 .masterminds-division-item-content {
-                    .masterminds-division-item-blurb {
-                        opacity: 0;
-                        transform: translateY(20px);
-                        visibility: hidden;
-                    }
-
                     img.mm-brain {
                         transform: translateY(0);
                     }
@@ -432,12 +417,6 @@
                 }
 
                 .masterminds-division-item-content {
-                    .masterminds-division-item-blurb {
-                        opacity: 0;
-                        transform: translateY(20px);
-                        visibility: hidden;
-                    }
-
                     img.mm-brain {
                         transform: translateY(0);
                     }
@@ -459,8 +438,8 @@
 
                 .base-mountain-zero {
                     img {
-                        transform: translateX(-27rem) translateY(10rem);
                         opacity: 1;
+                        transform: translateX(-27rem) translateY(10rem);
                     }
                 }
 
@@ -478,12 +457,6 @@
                 }
 
                 .masterminds-division-item-content {
-                    .masterminds-division-item-blurb {
-                        opacity: 0;
-                        transform: translateY(20px);
-                        visibility: hidden;
-                    }
-
                     img.mm-brain {
                         transform: translateY(0);
                     }
@@ -516,12 +489,6 @@
                 }
 
                 .masterminds-division-item-content {
-                    .masterminds-division-item-blurb {
-                        opacity: 0;
-                        transform: translateY(20px);
-                        visibility: hidden;
-                    }
-
                     img.mm-brain {
                         transform: translateY(0);
                     }
@@ -535,12 +502,12 @@
         }
     }
 
-    @media (max-width: 1619px) {
-        height: 17.5rem;
-        width: 30rem;
+    // @media (max-width: 1619px) {
+    //     height: 17.5rem;
+    //     width: 30rem;
 
-        &:hover {
-            width: 30rem;
-        }
-    }
+    //     &:hover {
+    //         width: 30rem;
+    //     }
+    // }
 }

@@ -56,7 +56,7 @@ export default defineComponent({
         imgSrc: {
             type: String,
             required: true,
-            default: 'masterminds-logo.svg',
+            default: 'masterminds-logo.png',
         },
         imgAlt: String,
         blurbOne: String,

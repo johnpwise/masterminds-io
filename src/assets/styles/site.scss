@@ -14,7 +14,7 @@
 html,
 body,
 #app {
-    min-height: 100vh;
+    // min-height: 100vh;
     width: 100vw;
     background: $mm-white;
     font-family: 'PT Sans Narrow', sans-serif;
@@ -27,7 +27,7 @@ body,
     /* Centers vertically */
     overflow: hidden;
 
-    @media (max-width: 1619px), (max-height: 75rem) {
-        overflow: auto;
-    }
+    // @media (max-width: 1619px), (max-height: 75rem) {
+    //     overflow: auto;
+    // }
 }

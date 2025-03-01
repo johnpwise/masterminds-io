@@ -2,14 +2,14 @@
 @use '../sass/colors' as *;
 
 .masterminds-divisions-container {
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     overflow: hidden;
     position: relative;
 
-    @media (max-width: 1619px) {
-        flex-direction: column;
-    }
+    // @media (max-width: 1619px) {
+    //     flex-direction: column;
+    // }
 }
