@@ -4,6 +4,7 @@
             <div class="masterminds-logo">
                 <img alt="masterminds brain" src="./assets/images/logos/masterminds-logo.png" />
             </div>
+
             <div class="masterminds-nav">
                 <div class="masterminds-nav-item">
                     <span>About us</span>
@@ -25,8 +26,9 @@
         </div>
 
         <div class="masterminds-divisions-container">
-            <DivisionItem :index-number="0" 
-                :is-hover="isDevOpsHover" 
+            <DivisionItem 
+                :index-number="0"
+                :is-hover="isDevOpsHover"
                 :is-other-hover="isDevOpsOtherHover"
                 :division-class="divisionClasses[0]"
                 :division-class-expanded="divisionClassExpanded"
@@ -34,11 +36,12 @@
                 img-alt="devops masterminds brain"
                 blurb-one="Form, Flow and Fly"
                 blurb-two="with our DevOps Maturity Model."
-                @mouseenter="onHover('devops')" 
+                @mouseenter="onHover('devops')"
                 @mouseleave="onHover('none')" />
-            
-            <DivisionItem :index-number="1" 
-                :is-hover="isDataHover" 
+
+            <DivisionItem 
+                :index-number="1"
+                :is-hover="isDataHover"
                 :is-other-hover="isDataOtherHover"
                 :division-class="divisionClasses[1]"
                 :division-class-expanded="divisionClassExpanded"
@@ -46,11 +49,12 @@
                 img-alt="data masterminds brain"
                 blurb-one="Prepare, Prevent and Predict"
                 blurb-two="with our Data Maturity Model."
-                @mouseenter="onHover('data')" 
+                @mouseenter="onHover('data')"
                 @mouseleave="onHover('none')" />
-            
-            <DivisionItem :index-number="2" 
-                :is-hover="isAnalyticsHover" 
+
+            <DivisionItem 
+                :index-number="2" 
+                :is-hover="isAnalyticsHover"
                 :is-other-hover="isAnalyticsOtherHover"
                 :division-class="divisionClasses[2]"
                 :division-class-expanded="divisionClassExpanded"
@@ -58,7 +62,7 @@
                 img-alt="analytics masterminds brain"
                 blurb-one="Assemble, Analyze and Align"
                 blurb-two="with our Analytics Maturity Model."
-                @mouseenter="onHover('analytics')" 
+                @mouseenter="onHover('analytics')"
                 @mouseleave="onHover('none')" />
         </div>
     </div>
