@@ -14,8 +14,9 @@
     img.mm-brain {
         height: 4rem;
         padding-top: 3rem;
+        transform: scale(0.8);
         transition: transform $mm-timing-medium ease-in-out;
-        width: 15rem;
+        // width: 15rem;
         z-index: 7;
     }
 
