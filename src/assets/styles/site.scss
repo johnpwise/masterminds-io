@@ -11,19 +11,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
 
-html,
-body,
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
 #app {
-    // min-height: 100vh;
+    height: 100vh;
     background: $mm-white;
     display: flex;
+    flex-direction: column;
     font-family: 'PT Sans Narrow', sans-serif;
     justify-content: center;
     overflow: hidden;
     width: 100vw;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    // @media (max-width: 1619px), (max-height: 75rem) {
-    //     overflow: auto;
-    // }
 }

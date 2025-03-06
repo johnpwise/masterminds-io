@@ -3,7 +3,11 @@
 
 .masterminds {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, #FFF 46.5%);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
     width: 101.25rem;
+    margin: 0 auto;
 
     .masterminds-header {
         align-items: center;
