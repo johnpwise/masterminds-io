@@ -4,15 +4,6 @@
             <div class="masterminds-logo">
                 <img alt="masterminds brain" src="./assets/images/logos/masterminds-logo.png" />
             </div>
-
-            <div class="masterminds-nav">
-                <div class="masterminds-nav-item">
-                    <span>About us</span>
-                </div>
-                <div class="masterminds-nav-item">
-                    <span>Contact</span>
-                </div>
-            </div>
         </div>
 
         <div class="masterminds-hero">
@@ -36,6 +27,7 @@
                 img-alt="devops masterminds brain"
                 blurb-one="Form, Flow and Fly"
                 blurb-two="with our DevOps Maturity Model."
+                url="https://www.devopsmasterminds.com"
                 @mouseenter="onHover('devops')"
                 @mouseleave="onHover('none')" />
 
@@ -49,6 +41,7 @@
                 img-alt="data masterminds brain"
                 blurb-one="Prepare, Prevent and Predict"
                 blurb-two="with our Data Maturity Model."
+                url="https://www.datamasterminds.com"
                 @mouseenter="onHover('data')"
                 @mouseleave="onHover('none')" />
 
@@ -62,6 +55,7 @@
                 img-alt="analytics masterminds brain"
                 blurb-one="Assemble, Analyze and Align"
                 blurb-two="with our Analytics Maturity Model."
+                url="https://www.analyticsmasterminds.com"
                 @mouseenter="onHover('analytics')"
                 @mouseleave="onHover('none')" />
         </div>

@@ -3,6 +3,8 @@
 @use '../sass/constants' as *;
 
 .mm-button {
+    text-decoration: none;
+
     background: $mm-turquoise;
     border-radius: 0.625rem;
     color: $mm-white;
@@ -21,7 +23,9 @@
         margin-left: 0;
         opacity: 0;
         overflow: hidden;
-        transition: width $mm-timing-short ease, opacity $mm-timing-short ease, margin-left $mm-timing-short ease;
+        transition: width $mm-timing-short ease,
+            opacity $mm-timing-short ease,
+            margin-left $mm-timing-short ease;
         width: 0;
 
         font-awesome-icon {

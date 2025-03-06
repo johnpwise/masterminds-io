@@ -1,11 +1,14 @@
 <template>
-    <div class="masterminds-division-item" :class="[divisionClass, isHover ? 'expanded' : isOtherHover ? 'contracted' : '', divisionClassExpanded ? divisionClassExpanded : '']">
+    <div class="masterminds-division-item"
+        :class="[divisionClass, isHover ? 'expanded' : isOtherHover ? 'contracted' : '', divisionClassExpanded ? divisionClassExpanded : '']">
         <div class="base-mountain-zero">
-            <img src="../../assets/images/svg/base-mountain-one-masked.svg" class="division-item" alt="Alpine Mountain Range">
+            <img src="../../assets/images/svg/base-mountain-one-masked.svg" class="division-item"
+                alt="Alpine Mountain Range">
         </div>
 
         <div class="base-mountain-one">
-            <img src="../../assets/images/svg/base-mountain-one-masked.svg" class="division-item" alt="Alpine Mountain Range">
+            <img src="../../assets/images/svg/base-mountain-one-masked.svg" class="division-item"
+                alt="Alpine Mountain Range">
         </div>
 
         <div class="trees">
@@ -31,12 +34,12 @@
                 <span>{{ blurbOne }} <br /> {{ blurbTwo }}</span>
             </div>
 
-            <div class="mm-button">
+            <a :href="url" target="_blank" rel="noopener noreferrer" class="mm-button">
                 <span>Meet me here</span>
                 <span class="arrow-icon">
                     <font-awesome-icon :icon="['fas', 'arrow-right']" />
                 </span>
-            </div>
+            </a>
         </div>
     </div>
 </template>
@@ -61,6 +64,7 @@ export default defineComponent({
         imgAlt: String,
         blurbOne: String,
         blurbTwo: String,
+        url: String,
     },
 
     setup() {
